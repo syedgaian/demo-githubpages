@@ -2,6 +2,7 @@
 const nextConfig = {
 	basePath: "/demo-githubpages",
 	output: "export",
+	distDir: "build",
 	images: {
 		remotePatterns: [
 			{

@@ -39,7 +39,8 @@ jobs:
             - name: Upload artifact 📡
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./out
+                  name: "next build dir for static assets 📂"
+                  path: ./build
 
     deploy:
         environment:

@@ -3,15 +3,8 @@ const nextConfig = {
 	basePath: "/demo-githubpages",
 	output: "export",
 	distDir: "build",
-	experimental: {
-		images: {
-			remotePatterns: [
-				{
-					hostname: "https://syedgaian.github.io/demo-githubpages/",
-				},
-			],
-		},
-	},
+	reactStrictMode: true,
+	assetPrefix: "https://syedgaian.github.io/demo-githubpages/",
 };
 
 export default nextConfig;

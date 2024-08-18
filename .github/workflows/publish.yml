@@ -31,16 +31,16 @@ jobs:
                   static_site_generator: next
 
             - name: Build with Next.js 🏗️
-              run: npm run build
+              run: npm run build && touch ./build/.lol
 
             - name: List output directory (debugging) 📂
               run: ls -la
 
             - name: Upload artifact 📡
-              uses: actions/upload-pages-artifact@v4
+              uses: actions/upload-pages-artifact@v3
               with:
                   name: "next build dir for static assets 📂"
-                  path: ./.next
+                  path: ./build
 
     deploy:
         environment:

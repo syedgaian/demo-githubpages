@@ -4,13 +4,7 @@ const nextConfig = {
 	output: "export",
 	distDir: "build",
 	reactStrictMode: true,
-	images: {
-		remotePatterns: [
-			{
-				hostname: "https://syedgaian.github.io/demo-githubpages/",
-			},
-		],
-	},
+	assetPrefix: "https://syedgaian.github.io/demo-githubpages/",
 };
 
 export default nextConfig;

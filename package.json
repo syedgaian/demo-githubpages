@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "NEXT_DEBUG=true && next build -c next.config.mjs",
+		"build": "NEXT_DEBUG=true && next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
